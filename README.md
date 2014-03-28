@@ -21,10 +21,10 @@ More important than variables themselves are the data they point to. Variables c
 
 #### Primitive Types
 Primitive types are the most basic kinds of values we can handle distinctly in programs; more complex types are essentially just co
--##### string
--##### char
--##### integer
--##### decimal/float
+- string
+- char
+- integer
+- decimal/float
 
 boolean
 ...
