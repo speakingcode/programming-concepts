@@ -5,9 +5,10 @@ Programming Concepts
 ## Creative-Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)
 
 ## Intro
-This guide is intended to introduce many programming concepts, programming related practices and tools, and philosophies of programming technique, approach, and style in order to provide a clear, holistic path for deeply exploring the art of programming. It is not intended to provide mastery of each of the subjects, but rather to explain them just enough to allow the reader to guide his or her self with direction and confidence through the myriad sources of information available elsewhere. Think of this as a detailed outline of many of the weapons available in the programmer's arsenal, sprinkled with tidbits of experience and wisdom from a career software engineer.
+This guide is intended to introduce many programming concepts, programming related practices and tools, and philosophies of programming technique, approach, and style in order to provide a clear, holistic path for deeply exploring the art of programming. It is not intended to provide mastery of each of the subjects, but rather to explain them just enough to allow the reader to guide his or her self with direction and confidence through the myriad sources of information available elsewhere, so that he or she is empowered to reach mastery proficiency. Think of this document as a detailed outline of many of the weapons available in the programmer's arsenal, sprinkled with tidbits of experience and wisdom as well as some historical context where appropriate.
 
-Although I aim to keep the document largely conceptual and agnostic from any particular language, platform, or software package, some concrete examples may be used to reinforce concepts. It is not my intent to teach any specific language or tool, but there is no guarantee that I will not be biased in favor of my own preferred implements.
+Although I aim to keep the document largely conceptual and agnostic from any particular language, platform, or software package, some concrete examples may be used to reinforce concepts or emphasize practical constraints. It is not my intent to teach any specific language or tool, but there is no guarantee that I will not be biased in favor of my own preferred implements.
+
 
 ## Basic Programming
 
@@ -52,14 +53,13 @@ Primitive types are the most basic kinds of values we can handle distinctly in p
 ##### if, else, else if
 ##### switch/case
 
-  functions
-    function calls
-    defining functions
-    return types
-    parameters
-    local variables
-    pass-by-value
-    pass-by-reference
+#### Functions
+##### Defining functions
+##### calling functions
+##### return values
+##### parameters
+###### pass-by-value
+###### pass-by-reference
 
   event-driven programming
     asynchronous operations
