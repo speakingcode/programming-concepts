@@ -1,24 +1,35 @@
 Programming Concepts
 ====================
-## Concepts and Topics for new and experienced programmers to learn and master.
-
+## Concepts and Topics for New and Experienced Programmers to Learn and Master.
 ## Copyright @speakingcode (http://speakingcode.com)
 ## Creative-Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)
 
+## Intro
+This guide is intended to introduce many concepts of programming, as well as programming related practices and tools, in order to provide a clear, holistic path for deeply exploring the art of programming. It is not intended to provide mastery of each of the subjects, but rather to explain them just enough to allow the reader to guide his or her self with direction and confidence through the myriad sources of information available online and in print. It is presented in what I believe is a logical order of progression, but sections may be skipped or read in any order. In terms of further reading, the reader should pursuit any of the topics in whatever order he or she prefers. Think of this as a detailed outline of many of the weapons available in the programmer's arsenal, which the reader may customize into his or her own toolbelt.
+
+Although I aim to keep the document largely conceptual and agnostic from any particular language, platform or software package, some concrete examples may be used to reinforce concepts. It is not my intent to teach any specific language or tool; better documents exist for each of those, but there is no guarantee that I will not be biased in favor of my own prefered implements.
+
 ### Basic Programming
+
+There are many applications of programming and various paradigms, styles, and languages that make use of different techniques and concepts to best suit their purposes, but several basic programming concepts are universal to many or nearly all of them. Although the exact syntax and details will vary, many common programming languages treat them quite similarly.
 
 #### Variables
 
-Variables, similarly to mathematics, are symbolic names used to reference pieces of data. Variables can reference simple values like numbers or strings of text, as well as more complex structures like collections or objects with properties and actions. 
-##### primitive types
-    string
-    integer
-    decimal/float
-    char
-    boolean
-    ...
+Variables, similarly to mathematics, are symbolic names used to reference pieces of data. In computing terms, this means variables are symbols that refer or point to segments of memory. In practice this means they are names we give to pieces of data and use to recall and act on that data later on.
 
-  operations
+More important than variables themselves are the data they point to. Variables can reference simple values like numbers or strings of text, as well as more complex structures like collections or objects with properties and actions. Variables have _type_ which indicates the kind of data they point to. Different languages have different _type systems_ and handle variable types differently, but generally type impacts what information the data can hold and what operations we can do on it.
+
+##### Primitive Types
+Primitive types are the most basic kinds of values we can handle distinctly in programs; more complex types are essentially just co
+string
+char
+integer
+decimal/float
+
+boolean
+...
+
+##### Operations
     add
     multiply
     divide
@@ -44,7 +55,7 @@ Variables, similarly to mathematics, are symbolic names used to reference pieces
     return types
     parameters
     local variables
-    pass-by-balue
+    pass-by-value
     pass-by-reference
 
   event-driven programming
@@ -167,12 +178,15 @@ Programming in Practice
     
   reuse
     libraries/modules/packages
+foss
     
   architecture/platform
     frameworks
     SDKs
 
   version control
+   svn, cvs, 
+mercurial
     git
       commit
       stash
@@ -188,3 +202,8 @@ Programming in Practice
     ...
 
   grep/regex/pattern matching
+
+C
+
+Unix/Linux
+
