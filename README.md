@@ -1,13 +1,16 @@
 Programming Concepts
 ====================
-### Concepts and Topics for new and experienced programmers to learn and master.
+## Concepts and Topics for new and experienced programmers to learn and master.
 
-#### Copyright @speakingcode (http://speakingcode.com)
-#### Creative-Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)
+## Copyright @speakingcode (http://speakingcode.com)
+## Creative-Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)
 
-Basic Programming
-  variables
-  primitive types
+### Basic Programming
+
+#### Variables
+
+Variables, similarly to mathematics, are symbolic names used to reference pieces of data. Variables can reference simple values like numbers or strings of text, as well as more complex structures like collections or objects with properties and actions. 
+##### primitive types
     string
     integer
     decimal/float
