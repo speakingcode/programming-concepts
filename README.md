@@ -18,11 +18,13 @@ There are many applications of programming and various paradigms, styles, and la
 
 Similar to variables in mathematics, variables in programming are symbolic names used to reference pieces of data. In computing terms, this means variables are symbols that refer or point to segments of memory. In practice this means they are names we give to pieces of data and use to recall and act on that data later on. Variables have values, which can change, i.e. vary.
 
-More important than variables themselves are the data they point to. Variables can reference simple values like numbers or strings of text, as well as more complex structures like collections or objects with properties and actions. Variables have _type_ which indicates the kind of data they point to. Different languages have different _type systems_ and handle variable types differently, but generally type impacts what kind of information the data can hold and what _operations_ can be do on it.
+More important than variables themselves are the data they point to. Variables can reference simple values like numbers or strings of text, as well as more complex structures like collections and objects with properties and actions. Variables have _type_ which indicates the kind of data they point to. Different languages have different _type systems_ and handle variable types differently, but generally type impacts what kind of information the data can hold and what _operations_ can be done on it. 
 
 #### Primitive Types
 
-Primitive types are the most basic kinds of values we can handle distinctly in programs; they are provided by the language itself and are the basic building blocks that more complex types are made from. Which primitive types exist varies from language to language, and some languages like Ruby don't even have them (everything is an object in Ruby), but conceptually they are widely present in most languages.
+Primitive types are the most basic kinds of values we can handle distinctly in programs; they are provided by the language itself and are the basic building blocks that more complex types of data are made from. Which primitive types exist varies from language to language, and some languages like Ruby don't even truly have distinct primitive types (everything is an object in Ruby), but conceptually they are widely present in most languages.
+
+Although different language compilers and interpreters represent primitive types (and more generally, any type) of data differently from one another, some common representations (particularly from the C family of languages) are described below. It is not important to memorize such low-level details, but it is important to appreciate the practical limitations inherent to them. 
 
 ##### Integer
 
@@ -30,19 +32,23 @@ Integers are numbers with no fractional/decimal component which can be positive 
 
 ##### Decimal/Float
 
-Decimals/Floats are numbers with fractional/decimal components which can be positive or negative. They are often represented as 4-byte values, or 32 bits, but the representation is more complex than integers, similar to scientific notation. 'Float' refers to the fact that the position of the decimal can 'float'; the number of decimal digits varies. Because of how floats are stored, sometimes precision can be lost.
-
-##### String
-
-Strings, in contrast to numerical types, are collections of letters, symbols, spaces, etc., treated as text/words rather than numbers. Common operatons for strings include concatenation (joining two or more strings together), finding or removing substrings, inserting substrings, getting the length, and so on. 
+Decimals/Floats are numbers with fractional/decimal components which can be positive or negative. They are often represented as 4-byte values, or 32 bits, but the representation is more complex than integers, similar to scientific notation. 'Float' refers to the fact that the position of the decimal can 'float'; the number of decimal digits varies. Because of how floats are stored, sometimes precision can be lost producing small 'roudning errors' in some calculatons. 
 
 ##### Char
 
-Some languages have a char type, which represents a single character. Strings are then collections of chars. Char representation in memory varies depending on platform specifics and encoding (UTF-8, UTF-16, ASCII etc.)
+Some languages have a char type, which, in contrast to numerical types, represents a single character of text. A char may be a letter, a numerical character, punctuation, a space, or even special characters like newline or tab characters. Char representation in memory varies depending on platform specifics and encoding (UTF-8, UTF-16, ASCII etc.), but they are still ultimately numbers stored as bytes, meaning the CPU operates on them like numbers. Common operations for chars include changing from lowercase to uppercase and vice-versa and comparing (used for sorting text).
+
+##### String
+
+Strings are collections of chars (letters, symbols, spaces, etc.) joined together and treated as text. Common operatons for strings include concatenation (joining two or more strings together), finding substrings, removing substrings, inserting substrings, getting their length, breaking down into substrings, and so on. Strng values are typically enclosed in quotation marks: `"this is a string"`
 
 ##### Boolean
 
-Booleans are true/false values: they can be either true or false, and nothing else. They are useful for logical conditions, "on-off" switches, etc.
+Booleans are true/false values: they can be either `true` or `false`, and nothing else. They are useful for logical conditions, "on-off" switches, etc. Whenever two values are compared (equals, less-than, greater-than, etc.) the result of the comparison is a boolean value. Some languages treat other, non-boolean types as _truthy_ or _falsey_, but conventions vary. In C, boolean values are simply ints, where 0 is false and all other values are true. In JavaScript, `null`, `undefined`, `NaN` (the result of invalid numerical operations such as division by 0), `""` (empty strings), `false`, and `0` are all falsey, but any object, array, non-empty string, non-zero number, and `true` are truthy. In Ruby, only `nil` (Ruby's version of null) and `false` are false, any other value of any type is true.
+
+##### null, nil, undefined
+
+In most languages, variable _declaration_ and variable _assignment_ are two separate operations, meaning it is possible to have variables that exist but don't actually point to a value. Generally, `null` is the "default" non-existent value. It is sometimes called `nil`, such as in Ruby. Some languages go a bit further and have a distinct value used when a program references a variable that hasn't even been declared, such as `undefined` in JavaScript. These special values are useful for programmers. 
 
 #### Collections
 ##### Array/List
