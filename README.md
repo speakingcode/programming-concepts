@@ -46,15 +46,14 @@ Some languages have a char type, which, in contrast to numerical types, represen
 
 Strings are collections of letters, symbols, spaces, numbers etc. joined together and treated as a unit of text. Common operatons for strings include concatenation (joining two or more strings together), finding substrings, removing substrings, inserting substrings, breaking strings down into substrings, getting the length of a string, comparing them, and so on. Strng values are typically denoted with quotation marks: `"this is a string"`.
 
-Languages that have a _char_ type usually treat strings as collections of chars, but some languages have no distinction, using single-character strings in place of chars.n
+Languages that have a _char_ type usually treat strings as collections of chars, but some languages have no distinction - a char is simply a string of length 1.
 
 ##### Boolean
 
-Booleans are true/false values: they can be either `true` or `false`, and nothing else. They are useful for logical conditions, "on-off" switches, etc. Whenever two values are compared (equals, less-than, greater-than, etc.) the result of the comparison is a boolean value. Some languages treat other, non-boolean types as _truthy_ or _falsey_, but conventions vary. In C, boolean values are simply ints, where 0 is false and all other values are true. In JavaScript, `null`, `undefined`, `NaN` (the result of invalid numerical operations such as division by 0), `""` (empty strings), `false`, and `0` are all falsey, but any object, array, non-empty string, non-zero number, and `true` are truthy. In Ruby, only `nil` (Ruby's version of null) and `false` are false, any other value of any type is true.
+Booleans are true/false values: they can be either `true` or `false`, and nothing else. They are useful for logical conditions, "on-off" switches, etc. The result of many comparison operations is a boolean value (`8 < 16`, `name == "John Doe"`, `x <= y`, etc.) Some languages treat other, non-boolean types as _truthy_ or _falsey_, but conventions vary. In C, boolean values are simply `ints`, where 0 is false and all other values are true. In JavaScript, `null`, `undefined`, `NaN` (Not-a-Number, the result of invalid numerical operations such as division by 0), `""` (empty strings), `false`, and `0` are all falsey, but any object, array, non-empty string, non-zero number, and `true` are truthy. In Ruby, only `nil` (Ruby's version of null) and `false` evaluate to false while any other value of any type is true.
 
 ##### null, nil, undefined
-
-In most languages, variable _declaration_ and variable _assignment_ are two separate operations, meaning it is possible to have variables that exist but don't actually point to a value. Generally, `null` is the "default" non-existent value. It is sometimes called `nil`, such as in Ruby. Some languages go a bit further and have a distinct value used when a program references a variable that hasn't even been declared, such as `undefined` in JavaScript. These special values are useful for programmers. 
+In most languages, variables can exist that don't actually have or point to a value yet; variable _declaration_ and variable _assignment_ are treated as separate operations. Often a special value called `null` is the "default" non-existent value. The concept of null takes different forms, such as `nil` in Ruby. Some languages also use a special distinct value for a variable that hasn't even been declared, such as `undefined` in JavaScript. These special values are useful for programmers. 
 
 #### Collections
 ##### Array/List
