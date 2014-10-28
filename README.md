@@ -22,25 +22,31 @@ More important than variables themselves are the data they point to. Variables c
 
 #### Primitive Types
 
-Primitive types are the most basic kinds of values we can handle distinctly in programs; they are provided by the language itself and are the basic building blocks that more complex types of data are made from. Which primitive types exist varies from language to language, and some languages like Ruby don't even truly have distinct primitive types (everything is an object in Ruby), but conceptually they are widely present in most languages.
+Primitive types, or basic types, are the most basic kinds of values we can work with in programs; they are usually provided by the language itself ('built in') and are the basic building blocks that more complex types of data are composed from. The available primitive types vary from language to language.
 
-Although different language compilers and interpreters represent primitive types (and more generally, any type) of data differently from one another, some common representations (particularly from the C family of languages) are described below. It is not important to memorize such low-level details, but it is important to appreciate the practical limitations inherent to them. 
+Although different language compilers and interpreters represent primitive types (and more generally, any type) of data 'behind the scenes' differently from one another, some common representations (particularly from the C family of languages) are described below. It is not important to memorize such low-level details, but it is important to appreciate the practical limitations inherent to them.
 
 ##### Integer
 
-Integers are numbers with no fractional/decimal component which can be positive or negative. In many languages integers are stored in memory as 4-byte values, or 32 bits, giving them a range from 0 to (2^32) - 1 (unsigned) or -(2^31) to (2^31) - 1 (signed). Integers typically support numerical operations like addition, subtraction, multiplication, and integer division (where the remainder is disregarded), as well as conversion to other numerical types.  
+Integers are numbers with no fractional/decimal component which can be positive or negative. Integers typically support numerical operations like addition, subtraction, multiplication, and integer division (where the remainder is disregarded), as well as conversion to other numerical types.
+
+Many languages have a variety of integer types, such as `int`, `short`, and `long`, the difference being the amount of space each one takes in memory. Larger types like `long` take up more memory (and require more work for the CPU to read and operate on), but have a much larger range of possible values, where smaller types use less memory and have a limited range of values.
 
 ##### Decimal/Float
 
-Decimals/Floats are numbers with fractional/decimal components which can be positive or negative. They are often represented as 4-byte values, or 32 bits, but the representation is more complex than integers, similar to scientific notation. 'Float' refers to the fact that the position of the decimal can 'float'; the number of decimal digits varies. Because of how floats are stored, sometimes precision can be lost producing small 'roudning errors' in some calculatons. 
+Decimals/Floats are numbers with fractional/decimal components which can be positive or negative. Their representation is more complex than integers, similar to scientific notation. 'Float' indicates that the position of the decimal point is not fixed; the number of decimal digits varies. Because of how floats are stored, sometimes precision can be lost producing small 'rounding errors' in some calculatons.
+
+Similarly to integer types, many langauges have multiple decimal types, such as `float` and `double`, again with varying sizes of memory allocation and range of values/precision.
 
 ##### Char
 
-Some languages have a char type, which, in contrast to numerical types, represents a single character of text. A char may be a letter, a numerical character, punctuation, a space, or even special characters like newline or tab characters. Char representation in memory varies depending on platform specifics and encoding (UTF-8, UTF-16, ASCII etc.), but they are still ultimately numbers stored as bytes, meaning the CPU operates on them like numbers. Common operations for chars include changing from lowercase to uppercase and vice-versa and comparing (used for sorting text).
+Some languages have a char type, which, in contrast to numerical types, represents a single character of text. A char may be a letter, a numerical character, punctuation, a space, or even special characters like newline or tab characters. Char representation in memory varies depending on platform specifics and encoding (UTF-8, UTF-16, ASCII etc.) Common operations for chars include changing from lowercase to uppercase (and vice-versa), and comparing in lexigraphical order, which is used often for searching through and sorting text.
 
 ##### String
 
-Strings are collections of chars (letters, symbols, spaces, etc.) joined together and treated as text. Common operatons for strings include concatenation (joining two or more strings together), finding substrings, removing substrings, inserting substrings, getting their length, breaking down into substrings, and so on. Strng values are typically enclosed in quotation marks: `"this is a string"`
+Strings are collections of letters, symbols, spaces, numbers etc. joined together and treated as a unit of text. Common operatons for strings include concatenation (joining two or more strings together), finding substrings, removing substrings, inserting substrings, breaking strings down into substrings, getting the length of a string, comparing them, and so on. Strng values are typically denoted with quotation marks: `"this is a string"`.
+
+Languages that have a _char_ type usually treat strings as collections of chars, but some languages have no distinction, using single-character strings in place of chars.n
 
 ##### Boolean
 
