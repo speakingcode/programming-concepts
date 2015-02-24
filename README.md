@@ -11,6 +11,10 @@ Although largely conceptual and agnostic from any particular language, platform,
 
 ## What Is Programming
 
+In a very basic sense, programming is the process of providing instructions to a computer or machine in order to make it perform a desired calculation or task. Modern programming is a much richer experience that involves writing clever and meaningful code to model complex things and use them to solve difficult problems effectively.
+
+Although electric and digital, modern computers still operate in a very mechanical fashion, rapidly loading values from memory, doing one of a few basic arithmetic operations on them, and storing them back in memory. Instructing computers at this low level is very tedious, as it 
+
 ## Basic Programming
 
 There are many applications of programming and various languages emphasize different paradigms, styles, and approaches that make use of different techniques and concepts to best suit their purposes. Regardless, several basic programming concepts are nearly universal to most languages used in modern practice. Although exact syntax and behavior will vary, many languages treat them conceptually quite similarly.
