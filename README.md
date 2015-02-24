@@ -1,24 +1,25 @@
 Programming Concepts
 ====================
-## Concepts and Topics for New and Experienced Programmers to Learn and Master.
+## Concepts and Topics for New and Experienced Programmers to Learn, Practice, and Master.
 ## Copyright @speakingcode (http://speakingcode.com)
 ## Creative-Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)
 
 ## Intro
-This guide is intended to introduce many programming concepts, practices and tools and philosophies of programming technique, approach, and style in order to provide a clear, holistic path for deeply exploring the art of programming. It is not intended to provide mastery of each of the subjects, but rather to explain them just enough to allow the reader to guide his or her self with direction and confidence through the myriad sources of information available elsewhere. Think of this document as a detailed outline of many of the weapons available in the programmer's arsenal, sprinkled with tidbits of experience, wisdom and hisorical context where appropriate.
+This book is intended to introduce various concepts, practices, tools and philosophies in order to provide a more guided path for seriously exploring the art of programming and the ways of coding. It is not intended to provide mastery of each of the topics, but rather to explain them just enough to allow the reader to guide his or her self with direction and confidence through the crowded landscape of computing. Instead of being a tutorial for a specific set of technologies, it is a detailed outline of many of the kinds of weapons available in the programmer's arsenal, sprinkled with tidbits of experience, wisdom and hisorical context where appropriate.
 
-Although I aim to keep the document largely conceptual and agnostic from any particular language, platform, or software package, some concrete examples may be used to reinforce concepts or emphasize practical constraints. It is not my intent to teach any specific language or tool, but there is no guarantee that I will not be biased in favor of my own preferred implements.
+Although largely conceptual and agnostic from any particular language, platform, or software package, some concrete examples may be used to reinforce concepts or emphasize practical constraints. It is not intended to teach any specific language or tool, but examples may be biased in favor of preferred implements.
 
+## What Is Programming
 
 ## Basic Programming
 
-There are many applications of programming and various paradigms, styles, and languages that make use of different techniques and concepts to best suit their purposes, but several basic programming concepts are universal to many or nearly all languages used in modern practice. Although the exact syntax and behavior will vary, many common programming languages treat them conceptually quite similarly.
+There are many applications of programming and various languages emphasize different paradigms, styles, and approaches that make use of different techniques and concepts to best suit their purposes. Regardless, several basic programming concepts are nearly universal to most languages used in modern practice. Although exact syntax and behavior will vary, many languages treat them conceptually quite similarly.
 
 ### Variables
 
-Similar to variables in mathematics, variables in programming are symbolic names used to reference pieces of data. In computing terms, this means variables are symbols that refer or point to segments of memory. In practice this means they are names we give to pieces of data and use to recall and act on that data later on. Variables have values, which can change, i.e. vary.
+Similar to variables in mathematics, variables in programming are symbolic names used to reference pieces of data that may change or vary. In computing terms, variables are references that point to specific segments of memory. In practical terms, variables are names we give to pieces of data and use to recall and act on that data later on. 
 
-More important than variables themselves are the data they point to. Variables can reference simple values like numbers or strings of text, as well as more complex structures like collections and objects with properties and actions. Variables have _type_ which indicates the kind of data they point to. Different languages have different _type systems_ and handle variable types differently, but generally type impacts what kind of information the data can hold and what _operations_ can be done on it. 
+Perhaps more important than variables themselves are the data they point to. Variables can reference simple values like numbers or strings of text, as well as more complex structures like collections and abstract objects that have properties and actions. The data that variables point to has a _type_ which determines the possible value(s) the data can hold and what operations can be done with it (and also tells the computer how to store it and manage it in memory). Different languages have different _type systems_ that deal with types differently.
 
 #### Primitive Types
 
@@ -30,32 +31,33 @@ Although different language compilers and interpreters represent primitive types
 
 Integers are numbers with no fractional/decimal component which can be positive or negative. Integers typically support numerical operations like addition, subtraction, multiplication, and integer division (where the remainder is disregarded), as well as conversion to other numerical types.
 
-Many languages have a variety of integer types, such as `int`, `short`, and `long`, the difference being the amount of space each one takes in memory. Larger types like `long` take up more memory (and require more work for the CPU to read and operate on), but have a much larger range of possible values, where smaller types use less memory and have a limited range of values.
+Some languages, like C and Java, have a variety of integer types, such as `int`, `short`, and `long`, the difference being the amount of space the data takes up in memory and the range of possible values. Larger types like `long` take up more memory (and require more work for the CPU to read and operate on), but have a much larger range of possible values, where smaller types use less memory but have a smaller range of values.
 
 ##### Decimal/Float
 
-Decimals/Floats are numbers with fractional/decimal components which can be positive or negative. Their representation is more complex than integers, similar to scientific notation. 'Float' indicates that the position of the decimal point is not fixed; the number of decimal digits varies. Because of how floats are stored, sometimes precision can be lost producing small 'rounding errors' in some calculatons.
+Decimals/Floats are numbers with fractional/decimal components which can be positive or negative. Their representation is more complex than integers, similar to scientific notation. 'Float' indicates that the position of the decimal point is not fixed; the number of decimal digits varies. Because of how floats are stored in memory, some calculations may yield a loss of precision, producing small 'rounding errors'.
 
 Similarly to integer types, many langauges have multiple decimal types, such as `float` and `double`, again with varying sizes of memory allocation and range of values/precision.
 
 ##### Char
 
-Some languages have a char type, which, in contrast to numerical types, represents a single character of text. A char may be a letter, a numerical character, punctuation, a space, or even special characters like newline or tab characters. Char representation in memory varies depending on platform specifics and encoding (UTF-8, UTF-16, ASCII etc.) Common operations for chars include changing from lowercase to uppercase (and vice-versa), and comparing in lexigraphical order, which is used often for searching through and sorting text.
+Some languages have a char type, which, in contrast to numerical types, represents a single character of text. A char may be a letter, a numerical character, punctuation, a space, or even special characters like newline or tab characters. Char representation in memory and the possible values varies depending on platform specifics and encoding (UTF-8, UTF-16, ASCII etc.) Common operations for chars include changing from lowercase to uppercase (and vice-versa), and comparing by lexigraphical order, which is used often for searching through and sorting text.
 
 ##### String
 
-Strings are collections of letters, symbols, spaces, numbers etc. joined together and treated as a unit of text. Common operatons for strings include concatenation (joining two or more strings together), finding substrings, removing substrings, inserting substrings, breaking strings down into substrings, getting the length of a string, comparing them, and so on. Strng values are typically denoted with quotation marks: `"this is a string"`.
+Strings are collections of letters, symbols, spaces, numbers etc. joined together and treated as a unit of text. Common operatons for strings include concatenation (joining two or more strings together), finding substrings, removing substrings, inserting substrings, breaking strings down into substrings, getting the length of a string, comparing them, and so on. String values are typically denoted with quotation marks: `"this is a string"`.
 
-Languages that have a _char_ type usually treat strings as collections of chars, but some languages have no distinction - a char is simply a string of length 1.
+Languages that have a _char_ type usually treat strings as collections of chars, but languages such as Ruby only have strings (a string of length 1 is effectively a char).
 
 ##### Boolean
 
-Booleans are true/false values: they can be either `true` or `false`, and nothing else. They are useful for logical conditions, "on-off" switches, etc. The result of many comparison operations is a boolean value (`8 < 16`, `name == "John Doe"`, `x <= y`, etc.) Some languages treat other, non-boolean types as _truthy_ or _falsey_, but conventions vary. In C, boolean values are simply `ints`, where 0 is false and all other values are true. In JavaScript, `null`, `undefined`, `NaN` (Not-a-Number, the result of invalid numerical operations such as division by 0), `""` (empty strings), `false`, and `0` are all falsey, but any object, array, non-empty string, non-zero number, and `true` are truthy. In Ruby, only `nil` (Ruby's version of null) and `false` evaluate to false while any other value of any type is true.
+Booleans are true/false values: they can be either `true` or `false`, and nothing else. They are useful for logical conditions, flags/indicators, and "on-off" switches. The result of most comparison operations is a boolean value (`8 < 16`  => true, `name == "John Doe"`  => false, `x <= y`, etc.) Some languages treat other, non-boolean types as _truthy_ or _falsey_, where the value may be treated as true or false, but conventions vary. In C, boolean values are simply `ints`, where 0 is false and all other values are true. In JavaScript, `null`, `undefined`, `NaN` (Not-a-Number, the result of invalid numerical operations such as division by 0), `""` (empty strings), `false`, and `0` are all falsey, but any object, array, non-empty string, non-zero number, and `true` are truthy. In Ruby, only `nil` (Ruby's version of null) and `false` evaluate to false while any other value of any type is true.
 
 ##### null, nil, undefined
-In most languages, variables can exist that don't actually have or point to a value yet; variable _declaration_ and variable _assignment_ are treated as separate operations. Often a special value called `null` is the "default" non-existent value. The concept of null takes different forms, such as `nil` in Ruby. Some languages also use a special distinct value for a variable that hasn't even been declared, such as `undefined` in JavaScript. These special values are useful for programmers. 
+In most languages, variables can exist that don't actually have or point to a value yet; variable _declaration_ and variable _assignment_ are treated as separate operations. Under the hood, decalring a variable tells the computer to reserve a space of memory for the variable, and assignment actually puts a value there. Most languages use a special value called `null` as the "default" non-existent value. The concept of null takes different forms, such as `nil` in Ruby. Some languages also use a similar but distinct value if the code references a variable that hasn't even been declared, such as `undefined` in JavaScript. These special values are useful for programmers in many cases.
 
 #### Collections
+
 ##### Array/List
 ##### Dictionary/hash/associative array
   
