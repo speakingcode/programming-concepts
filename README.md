@@ -5,19 +5,21 @@ Programming Concepts
 ## Creative-Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)
 
 ## Intro
-This book is intended to introduce various concepts, practices, tools and philosophies in order to provide a more guided path for seriously exploring the art of programming and the ways of coding. It is not intended to provide mastery of each of the topics, but rather to explain them just enough to allow the reader to guide his or her self with direction and confidence through the crowded landscape of computing. Instead of being a tutorial for a specific set of technologies, it is a detailed outline of many of the kinds of weapons available in the programmer's arsenal, sprinkled with tidbits of experience, wisdom and hisorical context where appropriate.
+This book is intended to introduce various concepts, practices, tools and philosophies in order to provide a more guided path for seriously exploring the art of programming and the ways of coding. It is not intended to provide mastery of each of the topics, but rather to explain them just enough to allow the reader to guide his or her self with direction and confidence through the crowded landscape of software creation. Rather than a tutorial for some specific set of technologies, think of this guide as a detailed outline of many of weapons available in the programmer's arsenal, sprinkled with tidbits of experience, wisdom and hisorical context where appropriate.
 
-Although largely conceptual and agnostic from any particular language, platform, or software package, some concrete examples may be used to reinforce concepts or emphasize practical constraints. It is not intended to teach any specific language or tool, but examples may be biased in favor of preferred implements.
+Although this guide is largely conceptual and agnostic from any particular language or platform, some concrete examples may be used to reinforce lessons or emphasize practical implications. It is not intended to teach any specific language or tool, but examples may be biased in favor of preferred implements.
 
 ## What Is Programming
 
-In a very basic sense, programming is the process of providing instructions to a computer or machine in order to make it perform a desired calculation or task. Modern programming is a much richer experience that involves writing clever and meaningful code to model complex things and use them to solve difficult problems effectively.
+In a very basic sense, programming is the process of providing instructions to a computer or machine in order to make it perform a desired calculation or task. Modern programming is a much richer experience that involves writing clever and meaningful code to model complex behaviors and solve difficult problems effectively.
 
-Although electric and digital, modern computers still operate in a very mechanical fashion, rapidly loading values from memory, doing one of a few basic arithmetic operations on them, and storing them back in memory. Instructing computers at this low level is very tedious, as it 
+Although electric and digital, modern computers still operate in a very mechanical fashion, rapidly loading instructions and data from memory, doing one of a few basic arithmetic operations on them, and storing them back in memory using specific addresses. Instructing computers at this low level is very tedious, as it requires many, many explicit operations of loading, manipulating and storing raw numbers and the purpose of the code becomes very difficult to decipher. Manually writing this _machine code_ to program something like a graphical user interface that responds to user inputs, transfers data reliably over the Internet and carries out tasks in parallel becomes practically impossible.
+
+Instead, programmers typically write programs in high-level langauges that look more like a mix of written human language and mathematical notation, which are then translated into machine code. Using these high level programming langauges transforms programming into a very expressive, creative craft that deals with abstract items and their relationships and encapsulating the technical details that allow them to operate.
 
 ## Basic Programming
 
-There are many applications of programming and various languages emphasize different paradigms, styles, and approaches that make use of different techniques and concepts to best suit their purposes. Regardless, several basic programming concepts are nearly universal to most languages used in modern practice. Although exact syntax and behavior will vary, many languages treat them conceptually quite similarly.
+There are many applications of programming and various languages emphasize different paradigms, styles, and approaches that make use of different techniques and concepts. Regardless, several basic programming concepts are nearly universal to most languages used in modern practice. Although exact syntax and behavior will vary, many languages treat them conceptually quite similarly.
 
 ### Variables
 
@@ -208,8 +210,7 @@ foss
     SDKs
 
   version control
-   svn, cvs, 
-mercurial
+   svn, cvs, mercurial
     git
       commit
       stash
